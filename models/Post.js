@@ -12,7 +12,7 @@ Post.init (
             primaryKey: true,
             autoIncrement: true
         },
-        post_title: {
+        title: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -24,7 +24,7 @@ Post.init (
             }
         },
         user_id: {
-            type: DataTypes.ID,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
