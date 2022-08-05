@@ -6,15 +6,28 @@ const User = require("./User");
 const Post = require("./Post");
 const Comment = require("./Comment");
 
+User.hasMany(Post, {
+    foreignKey: 'user_id'
+});
 
-// same require for all models
+Post.belongsTo(User, {
+    foreignKey: 'user_id'
+});
 
-// set up sequlize associtaions here
-// sequelize associations = db table relationships; i.e. one to one, one to many, many to many
+Comment.belongsTo(User, {
+    foreignKey: 'user_id'
+});
 
-// associations must have a primary key and foreign key relationship
-// sequelize models should have a primary key already set up so sequelize just needs the dev to define the foreign key, 
-Model1.belongsTo(Model2, {foreignKey: 'foreignKey'});
-Model2.belongsTo(Model1, {foreignKey: 'foreignKey'});
+Comment.belongsTo(Post, {
+    foreignKey: 'post_id'
+});
 
-module.exports = { User, Post };
+User.hasMany(Comment, {
+    foreignKey: 'user_id'
+});
+
+Post.hasMany(Comment, {
+    foreignKey: 'post_id'
+});
+
+module.exports = { User, Post, Comment };

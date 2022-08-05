@@ -19,11 +19,13 @@ Comment.init (
                 len: [1]
             }
         },
-        // This is where we would put the user_id,
-        // But if we want to allow anonymous comments,
-        // how would we setup the model? allowNull: true?
-        // And would we still setup a foreign key in the same way?
-        // Need to ask during class
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'user',
+              key: 'id'
+            }
+        },
         post_id: {
             type: DataTypes.INTEGER,
             references: {
