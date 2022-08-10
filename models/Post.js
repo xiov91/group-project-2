@@ -12,19 +12,16 @@ Post.init (
             primaryKey: true,
             autoIncrement: true
         },
-        post_title: {
+        title: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
+        post_text: {
             type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isURL: true
-            }
+            allowNull: false
         },
         user_id: {
-            type: DataTypes.ID,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
