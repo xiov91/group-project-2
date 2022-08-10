@@ -1,6 +1,7 @@
 const seedUsers = require('./user-seeds');
 const seedPosts = require('./post-seeds');
 const seedComments = require('./comment-seeds');
+const seedCategories = require('./category-seeds');
 
 const sequelize = require('../config/connection');
 console.log('User pull',process.env.DB_USER);
@@ -11,6 +12,9 @@ const seedAll = async () => {
     console.log('~~ DATABASE SYNCED ~~');
     await seedUsers();
     console.log('~~ USERS SEEDED ~~');
+
+    await seedCategories();
+    console.log('~~ CATEGORIES SEEDED ~~');
 
     await seedPosts();
     console.log('~~ POSTS SEEDED ~~');

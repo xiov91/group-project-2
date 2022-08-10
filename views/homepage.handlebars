@@ -1,18 +1,43 @@
-{{!-- <div> This is working maybe</div>
-
-<ol class="post-list">
-    {{#each posts as |post|}}
-    <li>
-        <div class="title">
-            <article class="post">
-                {{title}}
-        </div>
-        <div class="meta">by {{user.username}} on {{created_at}}
-            |
-            <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
-        </div>
-        </article>
-    </li>
-    {{/each}}
-</ol> --}}
-git
+<table class="category-list">
+    <tbody>
+        <tr class="heading">
+            <th>Category</th>
+        </tr>
+        <tr class="row">
+            <td class="category-row">
+                <div class="cat-name">News & Announcements</div>
+                <div class="cat-desc">Official site news and announcements.</div>
+            </td>
+        </tr>
+        <tr class="row">
+            <td class="category-row">
+            <div class="cat-name">General</div>
+            <div class="cat-desc">No other category fit? Try here.</div>
+            </td>
+        </tr>
+        <tr class="row">
+            <td class="category-row">
+                <div class="cat-name">Art & Literature</div>
+            <div class="cat-desc">Yours, Theirs, Ours. Anything written or drawn should go here.</div>
+            </td>
+        </tr>
+        <tr class="row">
+            <td class="category-row">
+            <div class="cat-name">Hot Takes</div>
+            <div class="cat-desc">Rule #1 of Fight Club...</div>
+            </td>
+        </tr>
+        <tr class="row">
+            <td class="category-row">
+            <div class="cat-name">Q & A</div>
+            <div class="cat-desc">Come for help and friendly advice!</div>
+            </td>
+        </tr>
+        <tr class="row">
+            <td class="category-row">
+            <div class="cat-name">Video Games</div>
+            <div class="cat-desc">Are ya winning, son?</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
