@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #2F0A46;
+    --secondary-color: #653A80;
+    --tertiary-color: #AA8EBC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'arial', cursive;
+    margin: 0;
+    font-size: 36px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--tertiary-color);
+}
