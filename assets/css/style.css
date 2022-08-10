@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #2F0A46;
+    --secondary-color: #653A80;
+    --tertiary-color: #AA8EBC;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+}
+
+body {
+    margin: 10px 60px;
+}
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+h1, h4, ol {
+    margin: 0;
+}
+p {
+    margin: 5px 0;
+}
+.top-bar {
+    background-color: var(--primary-color);
+    padding: 0 40px;
+}
+.main {
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+}
+.row {
+    padding: 5px 0;
+}
+.bottom {
+    display: flex;
+    color: grey;
+    font-size: 12px;
+}
+.timestamp {
+    padding-right: 10px;
+}

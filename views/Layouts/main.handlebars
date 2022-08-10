@@ -14,9 +14,12 @@
       <h1>
         <a href="/">That's My Opinion (Not Yours!)</a>
       </h1>
-      <nav>
+       <nav>
+        {{#if loggedIn}}
         <button id="logout" class="btn-no-style">logout</button>
-        <a href="/login">Login</a>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
       </nav>
     </header>
     <main>
