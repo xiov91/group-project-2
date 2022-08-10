@@ -4,8 +4,7 @@ const seedComments = require('./comment-seeds');
 const seedCategories = require('./category-seeds');
 
 const sequelize = require('../config/connection');
-console.log('User pull',process.env.DB_USER);
-console.log('Password pull',process.env.DB_PASSWORD);
+
 
 const seedAll = async () => {
     await sequelize.sync({ force: true });
