@@ -6,31 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thats-my-opinion</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">That's My Opinion (Not Yours!)</a>
-      </h1>
-       <nav>
-        {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main>
-      <!--body added with handle bar for plugged in changes more easily -->
-      {{{ body }}}
-    </main>
-    <footer>
-      Thank you for your visit!
-    </footer>
+  <div class="top-bar">
+    <h1>
+      <a href='/'>That's My Opinion</a>
+    </h1>
+    <h4>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">logout</button>
+      {{else}}
+      <a href="/login">Log In/Sign Up</a>
+      {{/if}}
+    </h4>
+  </div>
+  </header>
+  <main class="main">
+    <!--body added with handle bar for plugged in changes more easily -->
+    {{{ body }}}
+  </main>
   </div>
   <script src="/javascript/logout.js"></script>
+  <script src="./public/javascript/data.js"></script>
+  <script src="./public/javascript/main.js"></script>
 </body>
 
-</html> 
+</html>
