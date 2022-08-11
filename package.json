@@ -1,5 +1,5 @@
 {
-	"name": "boilerplate-code-setup",
+	"name": "thats-my-opinion",
 	"version": "1.0.0",
 	"description": "",
 	"engines": {
@@ -8,7 +8,6 @@
 	},
 	"main": "server.js",
 	"scripts": {
-		"test": "jest",
 		"start": "node server.js",
 		"seed": "node seeds/index.js",
 		"watch": "nodemon server.js"
